@@ -1,4 +1,13 @@
 package com.rockwell.basics.animals;
 
-public class Tiger extends Cat {
+public class Tiger extends Cat implements AnimalWithStripes {
+
+    @Override
+    public void giveNoise() {
+        System.out.println(this.getClass().getSimpleName() + " roars");
+    }
+
+    public void hasStripes() {
+        System.out.println("Tiger has striped skin");
+    }
 }
