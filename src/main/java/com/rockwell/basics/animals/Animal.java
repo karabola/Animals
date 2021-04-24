@@ -9,5 +9,4 @@ public abstract class Animal {
     public void eat(double weight) {
         this.weight += weight;
     }
-
 }

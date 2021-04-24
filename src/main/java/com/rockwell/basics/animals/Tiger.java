@@ -7,6 +7,7 @@ public class Tiger extends Cat implements AnimalWithStripes {
         System.out.println(this.getClass().getSimpleName() + " roars");
     }
 
+    @Override
     public void hasStripes() {
         System.out.println("Tiger has striped skin");
     }
