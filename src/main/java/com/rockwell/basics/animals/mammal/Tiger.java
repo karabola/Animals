@@ -1,4 +1,6 @@
-package com.rockwell.basics.animals;
+package com.rockwell.basics.animals.mammal;
+
+import com.rockwell.basics.animals.AnimalWithStripes;
 
 public class Tiger extends Cat implements AnimalWithStripes {
 
