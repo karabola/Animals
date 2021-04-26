@@ -1,4 +1,4 @@
-package com.rockwell.basics.animals;
+package com.rockwell.basics.animals.mammal;
 
 public class Lion extends Cat {
 
