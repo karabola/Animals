@@ -1,0 +1,43 @@
+@startuml
+
+interface Animal {
+void giveNoise()
+void sleep()
+void eat()
+}
+interface AnimalWithStripes {
+ void hasStripes()
+}
+
+abstract class Bird
+abstract class Mammal
+abstract class Reptile
+abstract class Cat
+
+class Hoopoe
+class Parrot {
+- boolean sleepDuringTheDay
+}
+class Lion
+class Tiger
+class Crocodile {
+- boolean sleepDuringTheDay
+}
+class Snake
+
+Animal<..Mammal
+Animal<..Bird
+Animal <.. Reptile
+
+Reptile <--Crocodile
+Reptile <--Snake
+Bird<--Parrot
+Bird<--Hoopoe
+Mammal<--Cat
+Cat<-- Lion
+Cat<--Tiger
+
+Tiger<..AnimalWithStripes
+Hoopoe<..AnimalWithStripes
+
+@enduml

@@ -6,7 +6,6 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 public class LionTest {
-
     Lion lion = new Lion();
 
     @Test
@@ -14,7 +13,7 @@ public class LionTest {
         //given
         lion.setWeight(10.0);
         //when
-        lion.eat(10);
+        lion.eat(5.0);
         //then
         assertEquals("Error when eating", 10.0, lion.getWeight());
     }
@@ -24,7 +23,7 @@ public class LionTest {
         //given
         lion.setWeight(5.0);
         //when
-        lion.eat(10);
+        lion.eat(5.0);
         //then
         assertEquals("Error when eating", 5.0, lion.getWeight());
     }
@@ -34,7 +33,7 @@ public class LionTest {
         //given
         lion.setWeight(4.0);
         //when
-        lion.eat(2);
+        lion.eat(5.0);
         //then
         assertEquals("Error when eating", 4.0, lion.getWeight());
     }
